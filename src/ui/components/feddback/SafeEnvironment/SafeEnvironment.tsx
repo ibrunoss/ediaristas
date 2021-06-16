@@ -4,7 +4,7 @@ import { SafeEnvironmentContainerStyled } from "./SafeEnvironment.style";
 
 const SafeEnvironment: React.FC = () => (
   <SafeEnvironmentContainerStyled>
-    Ambiente Seguro
+    Ambiente Seguro <i className="twf-lock" />
   </SafeEnvironmentContainerStyled>
 );
 
