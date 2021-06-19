@@ -2,6 +2,7 @@ import { ThemeProvider } from "@material-ui/core";
 import Head from "next/head";
 
 import Header from "ui/components/surfaces/Header/Header";
+import Footer from "ui/components/surfaces/Footer/Footer";
 import theme from "ui/themes";
 import { AppContainerStyled } from "@styles/pages/_app.style";
 import "@styles/globals.css";
@@ -22,6 +23,7 @@ function MyApp({ Component, pageProps }) {
         <AppContainerStyled>
           <Header />
           <Component {...pageProps} />
+          <Footer />
         </AppContainerStyled>
       </ThemeProvider>
     </>
