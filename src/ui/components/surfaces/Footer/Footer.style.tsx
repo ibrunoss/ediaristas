@@ -1,4 +1,4 @@
-import { styled, Container } from "@material-ui/core";
+import { styled, Container, Typography } from "@material-ui/core";
 
 export const FooterStyled = styled("footer")`
   margin-top: auto;
@@ -13,4 +13,10 @@ export const FooterContainerStyled = styled(Container)`
   justify-content: space-between;
   gap: ${({ theme }) => theme.spacing(5)};
   flex-wrap: wrap;
+`;
+
+export const FooterTitleStyled = styled((props) => (
+  <Typography component="h2" variant="body2" {...props} />
+))`
+  font-weight: bold;
 `;
