@@ -3,6 +3,7 @@ import Head from "next/head";
 
 import Header from "ui/components/surfaces/Header/Header";
 import theme from "ui/themes";
+import { AppContainerStyled } from "@styles/pages/_app.style";
 import "@styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
@@ -18,8 +19,10 @@ function MyApp({ Component, pageProps }) {
         <title>e-diaristas</title>
       </Head>
       <ThemeProvider theme={theme}>
-        <Header />
-        <Component {...pageProps} />
+        <AppContainerStyled>
+          <Header />
+          <Component {...pageProps} />
+        </AppContainerStyled>
       </ThemeProvider>
     </>
   );
