@@ -20,3 +20,14 @@ export const FooterTitleStyled = styled((props) => (
 ))`
   font-weight: bold;
 `;
+
+export const AppListStyled = styled("ul")`
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  gap: ${({ theme }) => theme.spacing()};
+
+  img {
+    width: 122px;
+  }
+`;
