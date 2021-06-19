@@ -1,6 +1,7 @@
 import { ThemeProvider } from "@material-ui/core";
 import Head from "next/head";
 
+import Header from "ui/components/surfaces/Header/Header";
 import theme from "ui/themes";
 import "@styles/globals.css";
 
@@ -17,6 +18,7 @@ function MyApp({ Component, pageProps }) {
         <title>e-diaristas</title>
       </Head>
       <ThemeProvider theme={theme}>
+        <Header />
         <Component {...pageProps} />
       </ThemeProvider>
     </>
