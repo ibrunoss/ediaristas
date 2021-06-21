@@ -3,6 +3,7 @@ import Head from "next/head";
 import SafeEnvironment from "ui/components/feddback/SafeEnvironment/SafeEnvironment";
 import PageTitle from "ui/components/data-display/PageTitle/PageTitle";
 import UserInformation from "ui/components/data-display/UserInformation/UserInformation";
+import TextFieldMask from "ui/components/inputs/TextFieldMask/TextFieldMask";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
           </h2>
         </>
       </PageTitle>
+      <TextFieldMask mask="99999-999" label="Digite seu CEP" fullWidth />
       <UserInformation
         avatar="https://github.com/89bsilva.png"
         description="Tatuí"
