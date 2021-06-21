@@ -1,5 +1,3 @@
-import Head from "next/head";
-
 import SafeEnvironment from "ui/components/feddback/SafeEnvironment/SafeEnvironment";
 import PageTitle from "ui/components/data-display/PageTitle/PageTitle";
 import UserInformation from "ui/components/data-display/UserInformation/UserInformation";
