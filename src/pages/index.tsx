@@ -1,4 +1,4 @@
-import { Button } from "@material-ui/core";
+import { Button, Typography } from "@material-ui/core";
 
 import SafeEnvironment from "ui/components/feddback/SafeEnvironment/SafeEnvironment";
 import PageTitle from "ui/components/data-display/PageTitle/PageTitle";
@@ -19,6 +19,7 @@ export default function Home() {
         </>
       </PageTitle>
       <TextFieldMask mask="99999-999" label="Digite seu CEP" fullWidth />
+      <Typography color="error">CEP inválido</Typography>
       <Button variant="contained" color="secondary" sx={{ width: 220 }}>
         Buscar
       </Button>
