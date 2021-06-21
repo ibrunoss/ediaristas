@@ -4,6 +4,7 @@ import SafeEnvironment from "ui/components/feddback/SafeEnvironment/SafeEnvironm
 import PageTitle from "ui/components/data-display/PageTitle/PageTitle";
 import UserInformation from "ui/components/data-display/UserInformation/UserInformation";
 import TextFieldMask from "ui/components/inputs/TextFieldMask/TextFieldMask";
+import { FormElementsContainerStyled } from "@styles/pages/index.style";
 
 export default function Home() {
   return (
@@ -18,11 +19,13 @@ export default function Home() {
           </h2>
         </>
       </PageTitle>
-      <TextFieldMask mask="99999-999" label="Digite seu CEP" fullWidth />
-      <Typography color="error">CEP inválido</Typography>
-      <Button variant="contained" color="secondary" sx={{ width: 220 }}>
-        Buscar
-      </Button>
+      <FormElementsContainerStyled>
+        <TextFieldMask mask="99999-999" label="Digite seu CEP" fullWidth />
+        <Typography color="error">CEP inválido</Typography>
+        <Button variant="contained" color="secondary" sx={{ width: 220 }}>
+          Buscar
+        </Button>
+      </FormElementsContainerStyled>
       <UserInformation
         avatar="https://github.com/89bsilva.png"
         description="Tatuí"
