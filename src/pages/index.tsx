@@ -1,4 +1,4 @@
-import { Button, Typography } from "@material-ui/core";
+import { Button, Typography, Container } from "@material-ui/core";
 
 import SafeEnvironment from "ui/components/feddback/SafeEnvironment/SafeEnvironment";
 import PageTitle from "ui/components/data-display/PageTitle/PageTitle";
@@ -19,19 +19,21 @@ export default function Home() {
           </h2>
         </>
       </PageTitle>
-      <FormElementsContainerStyled>
-        <TextFieldMask mask="99999-999" label="Digite seu CEP" fullWidth />
-        <Typography color="error">CEP inválido</Typography>
-        <Button variant="contained" color="secondary" sx={{ width: 220 }}>
-          Buscar
-        </Button>
-      </FormElementsContainerStyled>
-      <UserInformation
-        avatar="https://github.com/89bsilva.png"
-        description="Tatuí"
-        name="Bruno"
-        rating={5}
-      />
+      <Container>
+        <FormElementsContainerStyled>
+          <TextFieldMask mask="99999-999" label="Digite seu CEP" fullWidth />
+          <Typography color="error">CEP inválido</Typography>
+          <Button variant="contained" color="secondary" sx={{ width: 220 }}>
+            Buscar
+          </Button>
+        </FormElementsContainerStyled>
+        <UserInformation
+          avatar="https://github.com/89bsilva.png"
+          description="Tatuí"
+          name="Bruno"
+          rating={5}
+        />
+      </Container>
     </div>
   );
 }
