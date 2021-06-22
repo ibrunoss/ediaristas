@@ -7,6 +7,7 @@ import TextFieldMask from "ui/components/inputs/TextFieldMask/TextFieldMask";
 import {
   FormElementsContainerStyled,
   ProfessionalsPaperStyled,
+  ProfessionalsContainerStyled,
 } from "@styles/pages/index.style";
 
 export default function Home() {
@@ -31,12 +32,14 @@ export default function Home() {
           </Button>
         </FormElementsContainerStyled>
         <ProfessionalsPaperStyled>
-          <UserInformation
-            avatar="https://github.com/89bsilva.png"
-            description="Tatuí"
-            name="Bruno"
-            rating={5}
-          />
+          <ProfessionalsContainerStyled>
+            <UserInformation
+              avatar="https://github.com/89bsilva.png"
+              description="Tatuí"
+              name="Bruno"
+              rating={5}
+            />
+          </ProfessionalsContainerStyled>
         </ProfessionalsPaperStyled>
       </Container>
     </div>
