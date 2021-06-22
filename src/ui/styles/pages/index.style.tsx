@@ -20,3 +20,22 @@ export const ProfessionalsPaperStyled = styled(Paper)`
     }
   }
 `;
+
+export const ProfessionalsContainerStyled = styled("div")`
+  display: grid;
+  grid-template-columns: 1fr;
+
+  ${({ theme }) => theme.breakpoints.down("md")} {
+    margin-left: ${({ theme }) => theme.spacing(-2)};
+    margin-right: ${({ theme }) => theme.spacing(-2)};
+
+    > :nth-of-type(odd) {
+      background-color: ${({ theme }) => theme.palette.background.paper};
+    }
+  }
+
+  ${({ theme }) => theme.breakpoints.up("md")} {
+    grid-template-columns: repeat(2, 1fr);
+    gap: ${({ theme }) => theme.spacing(6)};
+  }
+`;
