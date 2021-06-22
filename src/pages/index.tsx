@@ -4,7 +4,10 @@ import SafeEnvironment from "ui/components/feddback/SafeEnvironment/SafeEnvironm
 import PageTitle from "ui/components/data-display/PageTitle/PageTitle";
 import UserInformation from "ui/components/data-display/UserInformation/UserInformation";
 import TextFieldMask from "ui/components/inputs/TextFieldMask/TextFieldMask";
-import { FormElementsContainerStyled } from "@styles/pages/index.style";
+import {
+  FormElementsContainerStyled,
+  ProfessionalsPaperStyled,
+} from "@styles/pages/index.style";
 
 export default function Home() {
   return (
@@ -27,12 +30,14 @@ export default function Home() {
             Buscar
           </Button>
         </FormElementsContainerStyled>
-        <UserInformation
-          avatar="https://github.com/89bsilva.png"
-          description="Tatuí"
-          name="Bruno"
-          rating={5}
-        />
+        <ProfessionalsPaperStyled>
+          <UserInformation
+            avatar="https://github.com/89bsilva.png"
+            description="Tatuí"
+            name="Bruno"
+            rating={5}
+          />
+        </ProfessionalsPaperStyled>
       </Container>
     </div>
   );
