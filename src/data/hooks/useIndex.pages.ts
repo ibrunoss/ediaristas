@@ -64,15 +64,10 @@ export default function useIndex() {
     zipCodeValid,
     zipCodeFeedback,
     error,
-    setError,
     searching,
-    setSearching,
     searchDone,
-    setSearchDone,
     professionals,
-    setProfessionals,
     remainingProfessionals,
-    setRemainingProfessionals,
     searchProfessionalsByZipCode,
   };
 }
