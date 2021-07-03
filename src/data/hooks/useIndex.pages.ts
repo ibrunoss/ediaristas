@@ -24,6 +24,8 @@ export default function useIndex() {
     setSearchDone(false);
     setSearching(true);
     setError("");
+    setProfessionals([]);
+    setRemainingProfessionals(0);
 
     try {
       await ApiService.get<{
